@@ -1,23 +1,5 @@
-INSERT INTO user_table (id, name, email, is_Admin, age)
-VALUES (1, 'John', 'john.doe@example.com', true, 30);
-
-INSERT INTO user_table (id, name, email, is_Admin, age)
-VALUES (2, 'Dana', 'Dana@example.com', false, 30);
-
-INSERT INTO user_table (id, name, email, is_Admin, age)
-VALUES (3, 'Murali', 'Murali@example.com', false, 30);
-
-INSERT INTO user_table (id, name, email, is_Admin, age)
-VALUES (4, 'Shagufa', 'Shagufa@example.com', true, 30);
-
-INSERT INTO user_table (id, name, email, is_Admin, age)
-VALUES (5, 'Shalabh', 'Shalabh@example.com', false, 30);
-
-INSERT INTO user_table (id, name, email, is_Admin, age)
-VALUES (6, 'Saurabh', 'Saurabh@example.com', true, 30);
-
-
-
-
-
-
+INSERT INTO user_table (id, name, age, email, role, password) VALUES (1, 'John Doe', 30, 'john.doe@example.com', 'Admin', 'abcd');
+INSERT INTO user_table (id, name, age, email, role, password) VALUES (2, 'Jane Smith', 25, 'jane.smith@example.com', 'User', 'abcd');
+INSERT INTO user_table (id, name, age, email, role, password) VALUES (3, 'Alice Johnson', 28, 'alice.johnson@example.com', 'User', 'abcd');
+INSERT INTO user_table (id, name, age, email, role, password) VALUES (4, 'Bob Brown', 35, 'bob.brown@example.com', 'User', 'abcd');
+INSERT INTO user_table (id, name, age, email, role, password) VALUES (5, 'Charlie Davis', 22, 'charlie.davis@example.com', 'User', 'abcd');

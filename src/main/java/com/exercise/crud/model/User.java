@@ -4,8 +4,9 @@ package com.exercise.crud.model;
 import jakarta.persistence.*;
 
 
+
 @Entity
-@Table(name = "UserTable")
+@Table(name = "user_table")
 public class User {
 
 
@@ -18,23 +19,26 @@ public class User {
 
     @Column
     private int age;
-
+    
     @Column
-    private boolean isAdmin;
+    private String role;
 
     @Column
     private String email;
+
+    @Column
+    private String password;
 
     public User() {
 
     }
 
-    public User(long id, String name, int age, boolean isAdmin, String email) {
-        this.id = id;
+    public User(String name, int age, String email, String role, String password) {
         this.name = name;
         this.age = age;
-        this.isAdmin = isAdmin;
         this.email = email;
+        this.role = role;
+        this.password = password;
     }
 
     public long getId() {
@@ -61,12 +65,12 @@ public class User {
         this.age = age;
     }
 
-    public boolean isAdmin() {
-        return isAdmin;
+    public String getRole() {
+        return role;
     }
 
-    public void setAdmin(boolean admin) {
-        isAdmin = admin;
+    public void setRole(String role) {
+        this.role = role;
     }
 
     public String getEmail() {
@@ -77,13 +81,21 @@ public class User {
         this.email = email;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +
-                ", isAdmin=" + isAdmin +
+                ", role=" + role +
                 ", email='" + email + '\'' +
                 '}';
     }
